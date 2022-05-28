@@ -1,0 +1,38 @@
+[workspace]
+members = ["contracts/*", "packages/*"]
+
+[profile.release.package.TombGenesisRewardPool]
+codegen-units = 1
+incremental = false
+
+[profile.release.package.TombRewardPool]
+codegen-units = 1
+incremental = false
+
+[profile.release.package.TShareRewardPool]
+codegen-units = 1
+incremental = false
+
+[profile.release.package.Oracle]
+codegen-units = 1
+incremental = false
+
+[profile.release.package.Masonry]
+codegen-units = 1
+incremental = false
+
+[profile.release.package.Treasury]
+codegen-units = 1
+incremental = false
+
+[profile.release.package.RebateTreasury]
+codegen-units = 1
+incremental = false
+
+[profile.release]
+rpath = false
+lto = true
+overflow-checks = true
+opt-level = 3
+debug = false
+debug-assertions = false
